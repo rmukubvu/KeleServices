@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="za.co.mabatalale">
+        <description>Basil Web services</description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>za.co.mabatalale.entities.BasilSysUser</class>
+        <class>za.co.mabatalale.entities.BasilUsers</class>
+        <class>za.co.mabatalale.entities.BasilUsersLeave</class>
+        <class>za.co.mabatalale.entities.BreakdownLogs</class>
+        <class>za.co.mabatalale.entities.BreakdownTypes</class>
+        <class>za.co.mabatalale.entities.Countries</class>
+        <class>za.co.mabatalale.entities.DeviceAllocation</class>
+        <class>za.co.mabatalale.entities.DeviceStatus</class>
+        <class>za.co.mabatalale.entities.Devices</class>
+        <class>za.co.mabatalale.entities.LeaveReason</class>
+        <class>za.co.mabatalale.entities.LookUpKeys</class>
+        <class>za.co.mabatalale.entities.LookupData</class>
+        <class>za.co.mabatalale.entities.OperatorSheet</class>
+        <class>za.co.mabatalale.entities.OperatorSignIn</class>
+        <class>za.co.mabatalale.entities.OperatorStatus</class>
+        <class>za.co.mabatalale.entities.ProductionLogs</class>
+        <class>za.co.mabatalale.entities.ProductionRecord</class>
+        <class>za.co.mabatalale.entities.ProductionType</class>
+        <class>za.co.mabatalale.entities.RoleTypes</class>
+        <class>za.co.mabatalale.entities.Shifts</class>
+        <class>za.co.mabatalale.entities.SiteConfig</class>
+        <class>za.co.mabatalale.entities.SiteRegions</class>
+        <class>za.co.mabatalale.entities.StandingLogs</class>
+        <class>za.co.mabatalale.entities.StandingTypes</class>
+        <class>za.co.mabatalale.entities.UserRoles</class>
+        <class>za.co.mabatalale.entities.WorkItemsDesc</class>
+        <class>za.co.mabatalale.entities.EndOfShift</class>
+        <class>za.co.mabatalale.models.ForemanReportDetails</class>
+        <class>za.co.mabatalale.models.ForemanReportFooter</class>
+        <class>za.co.mabatalale.models.ForemanReportSummary</class>
+        <class>za.co.mabatalale.models.ForemanReportHeader</class>
+        <class>za.co.mabatalale.models.DelayAnalysisReportModel</class>
+        <class>za.co.mabatalale.models.MetersDrilledToDate</class>
+        <class>za.co.mabatalale.models.MeterDrilledVsTarget</class>
+        <class>za.co.mabatalale.models.CurrentSession</class>
+        <class>za.co.mabatalale.entities.BackDateLogs</class>
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.query.timeout" value="30000"/>
+            <property name="javax.persistence.testOnBorrow" value="true" />
+            <property name="javax.persistence.validationQuery" value="SELECT 1" />
+            <!-- dev local-->
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/basil?autoReconnect=true&amp;useSSL=false"/>
+            <!-- production cloud
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://104.40.225.119/basil_prod?autoReconnect=true&amp;useSSL=false"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://marblevolume.dedicated.co.za/basil_prod?autoReconnect=true&amp;useSSL=false"/>-->
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="Aisha2010#"/>
+            <property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider"/>
+            <property name="hibernate.c3p0.acquire_increment" value="2" />
+            <property name="hibernate.c3p0.idle_test_period" value="300" />
+            <property name="hibernate.c3p0.timeout" value="1800" />
+            <property name="hibernate.c3p0.max_size" value="25" />
+            <property name="hibernate.c3p0.min_size" value="3" />
+            <property name="hibernate.c3p0.max_statement" value="0" />
+            <property name="hibernate.c3p0.preferredTestQuery" value="select 1;" />
+            <property name="hibernate.c3p0.validate" value="true" />
+        </properties>
+    </persistence-unit>
+</persistence>

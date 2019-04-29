@@ -49,7 +49,7 @@
             <property name="javax.persistence.testOnBorrow" value="true" />
             <property name="javax.persistence.validationQuery" value="SELECT 1" />
             <!-- dev local-->
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1/basil?autoReconnect=true&amp;useSSL=false"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/basil?autoReconnect=true&amp;useSSL=false"/>
             <!-- production cloud
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://104.40.225.119/basil_prod?autoReconnect=true&amp;useSSL=false"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://marblevolume.dedicated.co.za/basil_prod?autoReconnect=true&amp;useSSL=false"/>-->

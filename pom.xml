@@ -11,6 +11,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
@@ -52,6 +53,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.0</version>
+            <type>maven-plugin</type>
+        </dependency>
+        <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
             <version>2.8.0</version>
@@ -91,12 +98,12 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.2.8.Final</version>
+            <version>5.4.1.Final</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>5.2.8.Final</version>
+            <version>5.4.1.Final</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
         <dependency>
@@ -151,16 +158,14 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.8.1</version>
         </dependency>
-
+                        
     </dependencies>
 
     <properties>
-        <spring.version>2.5.5</spring.version>
         <java.version>1.8</java.version>
         <commons-dbcp.version>1.2.2</commons-dbcp.version>
         <commons-logging.version>1.0.4</commons-logging.version>
     </properties>
-
 
 
 </project>
